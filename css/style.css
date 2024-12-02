@@ -4,6 +4,8 @@
     --color1: #255EE9;
     --color2: #7289DA;
     --color3: #F6F6F6;
+    --color4: #23272A;
+
 
 }
 
@@ -22,7 +24,6 @@ header {
     height: 80vh;
     align-items: center;
     text-align: center;
-    background-color: red;
     background-image: url(/img/jumbo.png);
     background-size: cover;
 
@@ -47,9 +48,7 @@ header {
 
 }
 
-/* .logo {
-    background-color: aqua;
-} */
+
 
 .links {
     gap: 10px;
@@ -57,16 +56,41 @@ header {
 
 .button {
     text-decoration: none;
+    font-weight: 600;
+    color: var(--color4);
     background-color: white;
-    /* border: 1px solid black; */
     padding: 10px;
     border-radius: 999px;
+}
 
+.small {
+    font-size: 12px;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.black {
+    background-color: var(--color4);
+    color: white;
+}
+
+.purple {
+    background-color: var(--color2);
+    color: white;
+}
+
+.violet {
+    color: var(--color2);
 }
 
 .download {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
     margin: 20px;
-    /* line-height: 160%; */
+
 }
 
 .titolo {
@@ -75,7 +99,6 @@ header {
 }
 
 .herocontent {
-
     width: 70%;
     margin: 0 auto;
     line-height: 160%;
@@ -83,28 +106,32 @@ header {
 
 .row {
     display: flex;
+    align-items: center;
     /* justify-content: center;
     è scorretto, per via del fatto che il testo sennò tendere ad occupare
      tutta la riga arrivando agli estremi, e a noi questo non interessa.. */
     padding: 10%;
     margin: 0 auto;
-    gap: 50px;
 
+}
+
+aside .titolo {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 1em;
 }
 
 
 .row figure {
     flex-basis: 40%;
-    background-color: red;
 }
 
 .row aside {
     flex-basis: 60%;
-    background-color: blue;
 }
 
 .row:nth-child(even) {
-    background-color: aquamarine;
+    background-color: var(--color3);
     flex-direction: row-reverse;
 }
 
@@ -129,6 +156,10 @@ footer .banner {
 }
 
 footer {
-    background-color: chocolate;
+    background-color: var(--color4);
 
+}
+
+.button:hover {
+    background-color: initial;
 }
