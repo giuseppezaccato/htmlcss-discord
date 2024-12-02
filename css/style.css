@@ -187,7 +187,24 @@ footer {
 
 .button:hover {
     background-color: initial;
-    color: red;
+    color: orangered;
     font-weight: 700;
     font-style: oblique;
+}
+
+/* selettore forse inutile però efficiente */
+.column h4:not(:first-child) {
+    color: var(--color3);
+    padding-block: 0.5em;
+}
+
+#flag {
+    width: 1.5em;
+}
+
+.Language {
+    vertical-align: middle;
+    border-style: none;
+    background-color: var(--color4);
+    color: white;
 }
