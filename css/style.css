@@ -5,8 +5,6 @@
     --color2: #7289DA;
     --color3: #F6F6F6;
     --color4: #23272A;
-
-
 }
 
 body {
@@ -68,7 +66,7 @@ header {
 }
 
 .medium {
-    font-size: medium;
+    font-size: larger;
 }
 
 .black {
@@ -106,7 +104,7 @@ header {
 
 .row {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: center;
     è scorretto, per via del fatto che il testo sennò tendere ad occupare
      tutta la riga arrivando agli estremi, e a noi questo non interessa.. */
@@ -117,7 +115,7 @@ header {
 
 aside .titolo {
     font-size: 40px;
-    line-height: 120%;
+    line-height: 130%;
     margin-bottom: 1em;
 }
 
@@ -140,6 +138,23 @@ aside .titolo {
     text-align: center;
 }
 
+.startadventure {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+#starred {
+    background-image: url(/img/stars.svg);
+    padding-block: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+
+}
+
+
+
 .tabcontainer {
     display: flex;
 
@@ -151,15 +166,23 @@ aside .titolo {
 }
 
 footer .banner {
-    background-color: gray;
+
+    justify-content: space-between;
+    margin-inline: 10%;
+    background-color: var(--color4);
+    border-top: 1px solid var(--color2);
 
 }
 
 footer {
     background-color: var(--color4);
+    /* padding-block: 10%; */
 
 }
 
 .button:hover {
     background-color: initial;
+    color: red;
+    font-weight: 700;
+    font-style: oblique;
 }
