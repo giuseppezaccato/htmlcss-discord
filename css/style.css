@@ -207,4 +207,5 @@ footer {
     border-style: none;
     background-color: var(--color4);
     color: white;
+    padding-block: 1em;
 }
