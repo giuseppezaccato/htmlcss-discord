@@ -1,9 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --color1: #255EE9;
+    --color2: #7289DA;
+    --color3: #F6F6F6;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    /* background-color: var(--color1); */
+    background-image: url(//img/jumbo.png);
+    color: white;
+}
+
 .hero {
     display: flex;
-    height: 300px;
-    background-color: blue;
+    height: 80vh;
     align-items: center;
     text-align: center;
+    background-color: red;
+    background-image: url(/img/jumbo.png);
+    background-size: cover;
+
+
 }
 
 .tabcontainer {
@@ -12,45 +35,50 @@
 }
 
 .herocontent {
-    padding-inline: 10%;
+    padding: 10%;
 }
-
 
 .banner {
     display: flex;
     height: 10%;
-    background-color: rgb(128, 0, 0);
+    background-color: var(--color1);
     justify-content: space-around;
     padding-block: 15px;
-    /* padding-inline: 10%; */
+
 }
 
-.logo {
+/* .logo {
     background-color: aqua;
-}
+} */
 
 .links {
-    background-color: rgb(68, 0, 255);
-
+    gap: 10px;
 }
 
 .button {
-    background-color: #255ee9;
-    height: 30px;
-    border: 1px solid black;
-    padding: 5px;
+    text-decoration: none;
+    background-color: white;
+    /* border: 1px solid black; */
+    padding: 10px;
     border-radius: 999px;
+
 }
 
 .download {
-    margin: 10px;
+    margin: 20px;
+    /* line-height: 160%; */
+}
+
+.titolo {
+    font-size: 50px;
+    line-height: 200%;
 }
 
 .herocontent {
-    background-color: chartreuse;
+
     width: 70%;
     margin: 0 auto;
-
+    line-height: 160%;
 }
 
 .row {
@@ -61,6 +89,7 @@
     padding: 10%;
     margin: 0 auto;
     gap: 50px;
+
 }
 
 
