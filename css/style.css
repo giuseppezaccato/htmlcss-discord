@@ -12,7 +12,6 @@ body {
 }
 
 header {
-    background-image: url(//img/jumbo.png);
     color: white;
 }
 
@@ -21,7 +20,7 @@ header {
     height: 80vh;
     align-items: center;
     text-align: center;
-    background-image: url(/img/jumbo.png);
+    background-image: url(../img/jumbo.png);
     background-size: cover;
 
 
@@ -145,7 +144,7 @@ aside .titolo {
     position: absolute;
     top: -10px;
     content: attr();
-    border-image-source: url("/img/wave.svg");
+    border-image-source: url("./img/wave.svg");
     border-image-slice: 150 35 149 30 fill;
     border-image-width: 20px 20px 20px 20px;
     border-image-outset: 0px 0px 0px 0px;
@@ -175,7 +174,7 @@ aside .titolo {
 }
 
 #starred {
-    background-image: url(/img/stars.svg);
+    background-image: url(../img/stars.svg);
     padding-block: 1em;
     background-size: contain;
     background-repeat: no-repeat;
